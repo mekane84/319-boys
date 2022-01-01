@@ -5,7 +5,7 @@
     <img class="image-champion" alt="2021 Fantasy Football Champion"
          src="./assets/champion_2021.jpg">
   </div>
-  <p>Happy New Year, Aaron!</p>
+  <p class="text-3xl">Happy New Year, Aaron!</p>
 </template>
 
 <script>
@@ -27,9 +27,11 @@ export default {
   /*height: calc(80% - 600px);*/
 }
 .image-champion {
-  width:auto;
-  height:auto;
-  max-width:100%;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
   max-height: calc(100vh - 220px);
+  min-height: 200px;
 }
 </style>
