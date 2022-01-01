@@ -1,9 +1,10 @@
 <template>
+  <a href="stats">stats</a>
   <h1>319 Boys &ndash; Fantasy Football Legends Compendium</h1>
   <p>Presenting... your 2021 champion.... drum roll...</p>
   <div class="image-champion-container">
     <img class="image-champion" alt="2021 Fantasy Football Champion"
-         src="./assets/champion_2021.jpg">
+         src="@/assets/champion_2021.jpg">
   </div>
   <p class="text-3xl">Happy New Year, Aaron!</p>
 </template>
