@@ -1,10 +1,10 @@
 <template>
   <header>
-    <a href="./">319 Boys</a>
+    <a href="/319-boys/">319 Boys</a>
     <nav>
       <ul>
         <li>
-          <a href="stats">Stats</a>
+          <a href="/319-boys/stats/">Stats</a>
         </li>
       </ul>
     </nav>
