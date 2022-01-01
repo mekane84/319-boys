@@ -1,6 +1,6 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="MK Test 2"/>
+  <HelloWorld msg="319 Boys"/>
+  <img alt="2021 Fantasy Football Champion" src="./assets/champion_2021.jpg">
 </template>
 
 <script>

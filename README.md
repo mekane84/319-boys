@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### use this for windows to be able to run deploy.sh shell script using git bash
+npm config set script-shell "C:\Program Files\Git\git-bash.exe"
