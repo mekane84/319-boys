@@ -3,6 +3,24 @@
   <main>
     <h1>Stats page</h1>
 
+    <section id="dynamic-table">
+      <table>
+        <caption>Winners by Year</caption>
+        <thead>
+        <tr>
+          <th scope="col">Year</th>
+          <th>Champion</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="(champion, index) in yearlyDataList" :key="index">
+          <td>{{champion.year}}</td>
+          <td>{{champion.champion}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
     <section id="charts-section">
 
       <!-- Fake Stat Section #1 -->
@@ -29,7 +47,7 @@
       <div class="stat">
         <figure class="image-graph-container">
           <img class="image-graph image-fit" alt="Graph Description"
-               src="/319-boys/bar-chart.png">
+               src="../../../public/bar-chart.png">
           <figcaption>Long description testing, more long description, more
             text, more text, more text, more text, more text, more text, more text, more text, more
             text, more text, more text, more text, more text, more text, more text</figcaption>
@@ -42,11 +60,17 @@
 
 <script>
 import Header from '@/components/Header.vue';
+import yearlyData from '../../../public/data';
 
 export default {
   name: 'App',
   components: {
     Header,
+  },
+  data() {
+    return {
+      yearlyDataList: yearlyData,
+    };
   },
 };
 </script>
