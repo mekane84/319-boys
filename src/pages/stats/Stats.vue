@@ -29,8 +29,8 @@
       <div class="stat">
         <figure class="image-graph-container">
           <img class="image-graph image-fit" alt="Graph Description"
-               src="@/pages/stats/assets/fake-charts-by-type.jpg">
-          <figcaption>Proof Aaron is worst.  Long description testing, more long description, more
+               src="/319-boys/bar-chart.png">
+          <figcaption>Long description testing, more long description, more
             text, more text, more text, more text, more text, more text, more text, more text, more
             text, more text, more text, more text, more text, more text, more text</figcaption>
         </figure>
