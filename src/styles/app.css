@@ -11,11 +11,15 @@ body {
 }
 
 header {
-  @apply flex items-center justify-between
+  @apply flex items-center justify-between;
+}
+
+main {
+  @apply max-w-7xl mx-auto
 }
 
 h1 {
-  @apply text-4xl
+  @apply text-4xl;
 }
 
 @layer components {

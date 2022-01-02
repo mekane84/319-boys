@@ -3,10 +3,8 @@
   <main>
     <h1>319 Boys &ndash; Fantasy Football Legends Compendium</h1>
     <p>Presenting... your 2021 champion.... drum roll...</p>
-    <div class="image-champion-container">
-      <img class="image-champion" alt="2021 Fantasy Football Champion"
-           src="@/assets/champion_2021.jpg">
-    </div>
+    <img class="image-champion" alt="2021 Fantasy Football Champion"
+         src="@/pages/index/assets/champion_2021.jpg">
     <p class="text-3xl">Happy New Year, Aaron!</p>
   </main>
 </template>
@@ -15,7 +13,7 @@
 import Header from '@/components/Header.vue';
 
 export default {
-  name: 'App',
+  name: 'Index',
   components: {
     Header,
   },
@@ -25,9 +23,6 @@ export default {
 <style>
 #app {
   text-align: center;
-}
-.image-champion-container {
-  /*height: calc(80% - 600px);*/
 }
 .image-champion {
   margin: auto;
