@@ -65,7 +65,6 @@
 <script>
 import Header from '@/components/Header.vue';
 import Table from '@/components/Table.vue';
-import yearlyData from '../../../public/data';
 
 const people = [
   {
@@ -85,9 +84,15 @@ export default {
   components: {
     Header, Table,
   },
+  mounted() {
+    const thisVue = this;
+    fetch('https://mekane84.github.io/319-boys-assets/stats/yearlyData.json')
+      .then((response) => response.json())
+      .then((data) => { thisVue.yearlyDataList = data; });
+  },
   data() {
     return {
-      yearlyDataList: yearlyData,
+      yearlyDataList: [],
       peopleList: people,
     };
   },
