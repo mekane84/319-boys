@@ -1,6 +1,8 @@
 # 
 
 ## Project setup
+Download git: https://git-scm.com/downloads
+
 Download node.js https://nodejs.org/en/download/ - I clicked the "Windows Installer" image
 ```
 npm install
@@ -37,3 +39,14 @@ npm config set script-shell "C:\Program Files\Git\git-bash.exe"
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Fix email setting
+go to github -> settings -> Emails
+then either uncheck "Keep my email address private"
+or, grab email on this page that looks like this:
+99999999+username@users.noreply.github.com and modify 
+```
+git config user.email "99999999+username@users.noreply.github.com"
+git commit --amend --reset-author
+```
+if intellij opens vim window, type control-c or control-x and then type ":qa" and press enter 
