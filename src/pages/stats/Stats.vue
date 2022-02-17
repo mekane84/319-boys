@@ -7,6 +7,8 @@
       <Table :people="peopleList"/>
     </section>
 
+    <!-- todo: allow sorting this table -->
+
     <section id="dynamic-table">
       <table>
         <caption>Winners by Year</caption>
