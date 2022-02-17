@@ -3,6 +3,17 @@
   <main>
     <h1>Stats page</h1>
 
+    <section id="Aaron stats articles" class="mb-8">
+      <article>
+        Weekly points by year
+        <ul>
+          <li>
+            <a class="dec" href="https://mekane84.github.io/319-boys-assets/pages/weekly-points/2021.html" target="_blank">2021</a>
+          </li>
+        </ul>
+      </article>
+    </section>
+
     <section id="ui-table">
       <Table :people="peopleList"/>
     </section>

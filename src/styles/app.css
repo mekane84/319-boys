@@ -15,11 +15,21 @@ header {
 }
 
 main {
-  @apply max-w-7xl mx-auto
+  @apply max-w-7xl mx-auto;
 }
 
 h1 {
   @apply text-4xl;
+}
+
+a.dec {
+  @apply underline text-blue-600;
+}
+a.dec:hover {
+  @apply text-blue-800;
+}
+a.dec:visited {
+  @apply text-purple-600;
 }
 
 @layer components {
