@@ -4,7 +4,10 @@
     <nav>
       <ul>
         <li>
-          <a href="/319-boys/stats/">Stats</a>
+          <a href="https://mekane84.github.io/319-boys-assets/pages/319boys_dashboard.html"
+             target="_blank">
+            Stats
+          </a>
         </li>
       </ul>
     </nav>
