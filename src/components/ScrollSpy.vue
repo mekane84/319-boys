@@ -25,27 +25,23 @@
 
 <script>
 export default {
-  name: "ScrollSpy"
-}
+  name: 'ScrollSpy',
+}(() => {
+  const section = document.querySelectorAll('.section');
+  const sections = {};
+  let i = 0;
 
-(function() {
-  'use strict';
-
-  var section = document.querySelectorAll(".section");
-  var sections = {};
-  var i = 0;
-
-  Array.prototype.forEach.call(section, function(e) {
+  Array.prototype.forEach.call(section, (e) => {
     sections[e.id] = e.offsetTop;
   });
 
-  window.onscroll = function() {
-    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+  window.onscroll = function () {
+    const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
     for (i in sections) {
       if (sections[i] <= scrollPosition) {
         document.querySelector('.active').setAttribute('class', ' ');
-        document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
+        document.querySelector(`a[href*=${i}]`).setAttribute('class', 'active');
       }
     }
   };

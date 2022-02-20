@@ -71,7 +71,7 @@
 
 <script>
 export default {
-  name: 'Table',
+  name: 'TableItem',
   props: {
     people: Array,
   },

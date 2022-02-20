@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import Index from './Index.vue';
-import '../../styles/app.css';
+import Index from './PageIndex.vue';
+import '../../assets/tailwind.css';
 
 createApp(Index).mount('#app');

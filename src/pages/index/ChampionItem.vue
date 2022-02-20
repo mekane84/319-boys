@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Champion',
+  name: 'ChampionItem',
   props: {
     champion: Object,
     active: Boolean,

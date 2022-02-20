@@ -1,9 +1,8 @@
 <template>
   <section id="champions">
     <ul>
-      <li v-for="champion in champions" :key="champion.year" :id="'year-' + champion.year"
-          class="my-4">
-        <Champion :champion="champion" :active="this.activeChampion === champion"></Champion>
+      <li v-for="champion in champions" :key="champion.year" :id="'year-' + champion.year" class="my-4">
+        <ChampionItem :champion="champion" :active="this.activeChampion === champion"></ChampionItem>
       </li>
     </ul>
     <!-- todo: as your scroll down, show more champions, and enlarge image as you go down -->
@@ -11,12 +10,12 @@
 </template>
 
 <script>
-import Champion from '@/pages/index/Champion.vue';
+import ChampionItem from '@/pages/index/ChampionItem.vue';
 
 export default {
-  name: 'Champions',
+  name: 'ChampionList',
   components: {
-    Champion,
+    ChampionItem,
   },
   mounted() {
     const thisVue = this;
@@ -26,7 +25,6 @@ export default {
         thisVue.champions = data;
         const [firstChamp] = thisVue.champions;
         thisVue.activeChampion = firstChamp;
-        console.log(thisVue.activeChampion.year);
         thisVue.$nextTick(thisVue.setupScrollSpy);
       });
   },
@@ -43,12 +41,9 @@ export default {
         const windowHeight = window.innerHeight;
         const scrollPosMid = scrollPosTop + (windowHeight / 2);
         this.champions.forEach((champion) => {
-          console.log(scrollPosMid);
           const el = document.querySelector(`#year-${champion.year}`);
-          console.log(`${champion.year} ${el.offsetTop} ${el.scrollHeight}`);
           const elTop = el.offsetTop;
           const elBottom = el.offsetTop + el.scrollHeight;
-          console.log(elBottom);
           if (scrollPosMid >= elTop && scrollPosMid <= elBottom) {
             this.activeChampion = champion;
           }

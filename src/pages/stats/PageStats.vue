@@ -1,5 +1,5 @@
 <template>
-  <Header/>
+  <HeaderSection/>
   <main>
     <h1>Stats page</h1>
 
@@ -15,7 +15,7 @@
     </section>
 
     <section id="ui-table">
-      <Table :people="peopleList"/>
+      <TableItem :people="peopleList"/>
     </section>
 
     <!-- todo: allow sorting this table -->
@@ -76,8 +76,8 @@
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
-import Table from '@/components/Table.vue';
+import HeaderSection from '@/components/HeaderSection.vue';
+import TableItem from '@/components/TableItem.vue';
 
 const people = [
   {
@@ -93,9 +93,9 @@ const people = [
 ];
 
 export default {
-  name: 'App',
+  name: 'PageStats',
   components: {
-    Header, Table,
+    HeaderSection, TableItem,
   },
   mounted() {
     const thisVue = this;

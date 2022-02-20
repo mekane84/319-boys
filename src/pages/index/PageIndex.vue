@@ -1,21 +1,21 @@
 <template>
-  <Header/>
+  <HeaderSection/>
   <main>
     <h1>319 Boys &ndash; Fantasy Football Legends Compendium</h1>
     <p>Presenting... your 2021 champion.... drum roll...</p>
-    <Champions></Champions>
+    <ChampionList/>
   </main>
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
-import Champions from '@/pages/index/Champions.vue';
+import ChampionList from '@/pages/index/ChampionList.vue';
+import HeaderSection from "@/components/HeaderSection";
 
 export default {
-  name: 'Index',
+  name: 'PageIndex',
   components: {
-    Champions,
-    Header,
+    HeaderSection,
+    ChampionList,
   },
 };
 </script>
