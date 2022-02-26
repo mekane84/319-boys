@@ -1,10 +1,18 @@
 <template>
-  <section id="champions">
+  <section id="champions" class="relative">
     <ul>
       <li v-for="champion in champions" :key="champion.year" :id="'year-' + champion.year" class="my-4">
         <ChampionItem :champion="champion" :active="this.activeChampion === champion"></ChampionItem>
       </li>
     </ul>
+
+    <div id="selectedYear"
+         class="fixed top-0 h-screen flex items-center justify-center sm:right-2 md:right-4 lg:right-10 xl:right-20">
+      <h2 v-if="activeChampion" class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl">
+        {{activeChampion.year}}
+      </h2>
+    </div>
+
     <!-- todo: as your scroll down, show more champions, and enlarge image as you go down -->
   </section>
 </template>

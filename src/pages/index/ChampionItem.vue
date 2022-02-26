@@ -1,15 +1,13 @@
 <template>
   <img :alt="champion.year + ' Fantasy Football Champion'"
        :src="'https://mekane84.github.io/319-boys-assets/' + champion.image">
-  <div class="year" :class="{'active': active}">{{ champion.year }}</div>
 </template>
 
 <script>
 export default {
   name: 'ChampionItem',
   props: {
-    champion: Object,
-    active: Boolean,
+    champion: Object
   },
 };
 </script>
@@ -17,10 +15,7 @@ export default {
 <style scoped>
 img {
   margin: auto;
-  width: 80vw;
+  width: 70%;
   max-width: 800px;
-}
-.active {
-  color: red;
 }
 </style>

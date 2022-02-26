@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 sm:px-6 md:px-8">
+  <div class="px-4 sm:mx-30 md:mx-40">
     <div class="flex items-center justify-between">
       <a href="/319-boys/">319 Boys</a>
       <nav>
