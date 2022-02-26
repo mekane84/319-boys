@@ -23,5 +23,7 @@ export default {
 </script>
 
 <style scoped>
-
+  nav {
+    z-index: 100;
+  }
 </style>

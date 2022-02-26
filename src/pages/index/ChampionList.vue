@@ -48,11 +48,25 @@ export default {
         const scrollPosTop = document.documentElement.scrollTop || document.body.scrollTop;
         const windowHeight = window.innerHeight;
         const scrollPosMid = scrollPosTop + (windowHeight / 2);
+        const scrollPosMidMore = scrollPosMid - (windowHeight / 20);
+        // top and bottom should be set...
+        if ( !this.champions )
+          return;
+        if ( scrollPosTop < 3 ) {
+          console.log("top");
+          this.activeChampion = this.champions[0];
+          return;
+        }
+        if ( scrollPosTop + windowHeight + 3 > document.documentElement.scrollHeight ) {
+          console.log("bottom");
+          this.activeChampion = this.champions[this.champions.length - 1];
+          return;
+        }
         this.champions.forEach((champion) => {
           const el = document.querySelector(`#year-${champion.year}`);
           const elTop = el.offsetTop;
           const elBottom = el.offsetTop + el.scrollHeight;
-          if (scrollPosMid >= elTop && scrollPosMid <= elBottom) {
+          if (scrollPosMidMore >= elTop && scrollPosMidMore <= elBottom) {
             this.activeChampion = champion;
           }
         });
