@@ -53,12 +53,10 @@ export default {
         if ( !this.champions )
           return;
         if ( scrollPosTop < 3 ) {
-          console.log("top");
           this.activeChampion = this.champions[0];
           return;
         }
         if ( scrollPosTop + windowHeight + 3 > document.documentElement.scrollHeight ) {
-          console.log("bottom");
           this.activeChampion = this.champions[this.champions.length - 1];
           return;
         }
