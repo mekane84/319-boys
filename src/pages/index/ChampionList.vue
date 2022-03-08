@@ -1,7 +1,7 @@
 <template>
   <section id="champions" class="relative">
-    <ul>
-      <li v-for="champion in champions" :key="champion.year" :id="'year-' + champion.year" class="my-4">
+    <ul class="snap-y">
+      <li v-for="champion in champions" :key="champion.year" :id="'year-' + champion.year" class="my-4 snap-end">
         <ChampionItem :champion="champion" :active="this.activeChampion === champion"></ChampionItem>
       </li>
     </ul>
@@ -49,13 +49,13 @@ export default {
         const windowHeight = window.innerHeight;
         const scrollPosMid = scrollPosTop + (windowHeight / 2);
         const scrollPosMidMore = scrollPosMid - (windowHeight / 20);
-        // top and bottom should be set...
-        if ( !this.champions )
+        if ( !this.champions ) // wait until the list is set up
           return;
-        if ( scrollPosTop < 3 ) {
+        if ( scrollPosTop < 3 ) { // if they are scrolled to the top, should always show the first one
           this.activeChampion = this.champions[0];
           return;
         }
+        // if they are scrolled to the bottom, should always show the last one
         if ( scrollPosTop + windowHeight + 3 > document.documentElement.scrollHeight ) {
           this.activeChampion = this.champions[this.champions.length - 1];
           return;

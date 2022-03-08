@@ -4,7 +4,7 @@ module.exports = defineConfig({
     index: 'src/pages/index/main.js',
     'stats/index' : 'src/pages/stats/main.js',
   },
-  publicPath: '/319-boys/',
+  publicPath: '/',
   chainWebpack: (config) => config.optimization.minimize(false),
   transpileDependencies: true
 })
