@@ -2,7 +2,7 @@
   <HeaderSection/>
   <main>
     <h1>319 Boys &ndash; Fantasy Football Legends Compendium</h1>
-    <p>Presenting... your 2021 champion.... drum roll...</p>
+    <p class="sm:text-xl">Presenting... your 2021 champion.... drum roll...</p>
     <ChampionList/>
   </main>
 </template>
