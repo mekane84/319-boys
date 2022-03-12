@@ -10,6 +10,12 @@
               Stats
             </a>
           </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=VVZ_VJ7BEM8"
+               target="_blank">
+              Bonus Video
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
