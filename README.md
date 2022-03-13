@@ -36,6 +36,7 @@ I needed to configure shell on Windows 10
 ```
 npm config set script-shell "C:\Program Files\Git\git-bash.exe"
 ```
+After deploying, on github, go to settings / pages, enter custom domain as: 319boys.com
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
@@ -57,3 +58,4 @@ if intellij opens vim window, type control-c or control-x and then type ":qa" an
 * flicker for scrolling?
 * work more on light / dark theme colors
 * some kind of animation for page load before presenting champion images?
+* run the lint?
