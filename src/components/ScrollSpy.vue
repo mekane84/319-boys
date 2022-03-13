@@ -26,7 +26,9 @@
 <script>
 export default {
   name: 'ScrollSpy',
-}(() => {
+}
+
+(() => {
   const section = document.querySelectorAll('.section');
   const sections = {};
   let i = 0;

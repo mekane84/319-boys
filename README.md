@@ -50,3 +50,10 @@ git config user.email "99999999+username@users.noreply.github.com"
 git commit --amend --reset-author
 ```
 if intellij opens vim window, type control-c or control-x and then type ":qa" and press enter 
+
+# TODO LIST
+
+* improve some font sizes
+* flicker for scrolling?
+* work more on light / dark theme colors
+* some kind of animation for page load before presenting champion images?

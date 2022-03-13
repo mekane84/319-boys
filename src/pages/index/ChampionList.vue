@@ -1,13 +1,13 @@
 <template>
-  <section id="champions" class="relative">
+  <section id="champions" class="relative pt-1">
     <ul class="snap-y">
-      <li v-for="champion in champions" :key="champion.year" :id="'year-' + champion.year" class="my-4 snap-end">
+      <li v-for="champion in champions" :key="champion.year" :id="'year-' + champion.year" class="py-4 snap-end">
         <ChampionItem :champion="champion" :active="this.activeChampion === champion"></ChampionItem>
       </li>
     </ul>
 
     <div id="selectedYear"
-         class="fixed top-0 h-screen flex items-center justify-center sm:right-2 md:right-4 lg:right-10 xl:right-20">
+         class="fixed top-0 h-screen flex items-center justify-center sm:right-2 md:right-4 lg:right-10 xl:right-20 z-0">
       <h2 v-if="activeChampion" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
         {{activeChampion.year}}
       </h2>

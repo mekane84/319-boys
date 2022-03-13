@@ -1,8 +1,8 @@
 <template>
   <HeaderSection/>
   <main>
-    <h1>319 Boys &ndash; Fantasy Football Legends Compendium</h1>
-    <p class="sm:text-xl">Presenting... your 2021 champion.... drum roll...</p>
+    <h1 class="pt-2">319 Boys &ndash; Fantasy Football Legends</h1>
+    <p class="sm:text-xl pt-4">Presenting... your 2021 champion.... drum roll...</p>
     <ChampionList/>
   </main>
 </template>
