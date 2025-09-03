@@ -7,6 +7,12 @@
         <nav class="inline">
           <ul class="inline-flex items-center space-x-8">
             <li>
+              <a href="https://docs.google.com/spreadsheets/d/1xcIRewpvhyuR6cYp0rT7hIgvE-JH_KHGr7OxLdlzH1I/"
+                 target="_blank">
+                Dues and Contracts Spreadsheet
+              </a>
+            </li>
+            <li>
               <a href="https://mekane84.github.io/319-boys-assets/pages/319boys_dashboard.html"
                  target="_blank">
                 Stats
