@@ -9,7 +9,7 @@
             <li>
               <a href="https://docs.google.com/spreadsheets/d/1xcIRewpvhyuR6cYp0rT7hIgvE-JH_KHGr7OxLdlzH1I/"
                  target="_blank">
-                Dues and Contracts Spreadsheet
+                Dues and Contracts
               </a>
             </li>
             <li>
